@@ -42,10 +42,10 @@ Think:
 
 NaBus is composed of **separate projects**:
 
-| Project | Description |
-|------|-----------|
-| **NaBus** | Core event broker (this repository) |
-| **nbus-cli** | Command-line interface (separate repo) |
+| Project           | Description                             |
+| ----------------- | --------------------------------------- |
+| **NaBus**         | Core event broker (this repository)     |
+| **nbus-cli**      | Command-line interface (separate repo)  |
 | **NaBus Clients** | Language-specific SDKs (separate repos) |
 
 This keeps the core broker clean, stable, and focused.
@@ -69,3 +69,8 @@ You define events using **JSON Schema**:
   },
   "required": ["id", "email", "createdAt"]
 }
+```
+
+NaBus is primarily written in Rust. Rust is chosen for its performance, reliability, and strong type system, which helps in building a robust event broker. Its ownership model ensures memory safety without needing a garbage collector, making it ideal for high-performance applications like NaBus. Plus, with Rust's growing ecosystem, it's easier than ever to find libraries and tools to help with development.
+
+---
